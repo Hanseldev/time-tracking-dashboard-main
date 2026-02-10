@@ -1,5 +1,0 @@
-// import all JSON files dynamically
-const jsonFiles = import.meta.glob('./data/*.json', {
-  eager: true,
-  import: 'default'
-});

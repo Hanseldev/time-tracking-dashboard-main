@@ -41,7 +41,7 @@ function renderCards(title, value) {
 
   const profileActivity = document.querySelector('.profile-activity')
   const profileActivityCard = document.createElement("div")
-  profileActivityCard.style.backgroundImage = `url('/src/images/icon-${url}.svg')`
+  profileActivityCard.style.backgroundImage = `url(${import.meta.env.BASE_URL}images/icon-${url}.svg)`
 
 
   profileActivityCard.className = `
