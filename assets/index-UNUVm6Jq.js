@@ -3,7 +3,7 @@
   `,s.innerHTML=`
     <div class="profile-activity-breakdown grid grid-cols-2 grid-rows-2 justify-between items-center bg-navy-900 rounded-xl h-fit p-6 lg:grid-rows-3 lg:h-4/5 lg:gap-4">
         <p class="profile-activity-type font-semibold">${t}</p>
-        <img src="/src/images/icon-ellipsis.svg" width="20" alt="three dots icon" class="justify-self-end">
+        <img src="/time-tracking-dashboard-main/images/icon-ellipsis.svg" width="20" alt="three dots icon" class="justify-self-end">
         <p class="profile-activity-time text-2xl">${r.timeframes[n].current}hrs</p>
         <p class=" profile-activity-previous-time text-navy-200 text-right lg:row-start-3 col-span-2 lg:text-left">Last week - ${r.timeframes[n].previous}hrs</p>
       
