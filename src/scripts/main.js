@@ -50,11 +50,11 @@ function renderCards(title, value) {
   
   
   profileActivityCard.innerHTML = `
-    <div class="profile-activity-breakdown grid grid-cols-2 grid-rows-2 justify-between items-center bg-navy-900 rounded-xl h-fit p-6 lg:grid-rows-3 lg:h-4/5 lg:gap-4">
+    <div class="profile-activity-breakdown grid grid-cols-2 grid-rows-2 justify-between items-center bg-navy-900 rounded-xl p-6 lg:grid-rows-3 h-4/5 lg:grid-cols-[2fr_1fr] lg:gap-4">
         <p class="profile-activity-type font-semibold">${title}</p>
         <img src="${import.meta.env.BASE_URL}images/icon-ellipsis.svg" width="20" alt="three dots icon" class="justify-self-end">
         <p class="profile-activity-time text-2xl">${value.timeframes[timeframe].current}hrs</p>
-        <p class=" profile-activity-previous-time text-navy-200 text-right lg:row-start-3 col-span-2 lg:text-left">Last week - ${value.timeframes[timeframe].previous}hrs</p>
+        <p class=" profile-activity-previous-time text-navy-200 text-right lg:row-start-3 lg:col-span-2 lg:text-left">Last week - ${value.timeframes[timeframe].previous}hrs</p>
       
       </div>
   `
